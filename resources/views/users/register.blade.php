@@ -1,14 +1,15 @@
 <x-layout>
     <x-forms.form title="New User" description="Register a user">
 
-        <form action="/login" method="POST" class="mt-10 space-y-4">
+        <form action="/register" method="POST" class="mt-10 space-y-4">
             @csrf
+            <x-forms.field name="name" label="Name" type="text" />
 
             <x-forms.field name="email" label="Email" type="email" />
 
             <x-forms.field name="password" label="Password" type="password" />
 
-            <button type="submit" class="btn mt-2 h-10 w-full">Sign In</button>
+            <button type="submit" class="btn mt-2 h-10 w-full">Register</button>
         </form>
     </x-forms.form>
 </x-layout>
