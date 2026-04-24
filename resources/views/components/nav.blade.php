@@ -1,9 +1,8 @@
 <nav class="border-b border-border px-6">
     <div class="max-w-7xl mx-auto h-16 flex items-center justify-between">
         <div>
-            <a href="/" class="btn">
-                home
-                <!-- <img src="/images/logo.png" alt="Idea logo" width="100"> -->
+            <a href="/">
+                <img src="/images/mask2table.png" alt="Mask2Table" width="300">
             </a>
         </div>
 
