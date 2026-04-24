@@ -1,7 +1,7 @@
 <nav class="border-b border-border px-6">
     <div class="max-w-7xl mx-auto h-16 flex items-center justify-between">
         <div>
-            <a href="/">
+            <a href="/" class="btn">
                 home
                 <!-- <img src="/images/logo.png" alt="Idea logo" width="100"> -->
             </a>
@@ -18,7 +18,7 @@
             @endauth
 
             @guest
-                <a href="/login">Sign In</a>
+                <a href="/login" class="btn btn-outlined">Sign In</a>
                 <a href="/register" class="btn">Register</a>
             @endguest
         </div>

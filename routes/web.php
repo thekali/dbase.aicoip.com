@@ -9,8 +9,6 @@ use Illuminate\Support\Facades\Route;
 
 /* Landing Page & Errors */
 Route::get('/', fn () => view('landing'));
-Route::any('{catchall}', [PageController::class, 'notfound'])->where('catchall', '.*');
-
 
 /** Users **/
 Route::get('/register', [UserController::class, 'create'])->middleware('guest');

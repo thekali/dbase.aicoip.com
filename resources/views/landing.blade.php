@@ -3,4 +3,5 @@
 
     <a href="/login" class="btn">Sign In</a>
     <a href="/register" class="btn">Register</a>
+
 </x-layout>

@@ -10,14 +10,9 @@
             pagina che hai tentato di
             raggiungere <br> non esiste o è stata spostata!
         </p>
-        <a href="/"
-            class="group flex items-center gap-1 bg-white hover:bg-gray-200 px-7 py-2.5 text-gray-800 rounded-full mt-10 font-medium active:scale-95 transition-all">
-            Back to Home
-            <svg class="group-hover:translate-x-0.5 transition" width="22" height="22" viewBox="0 0 22 22"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.583 11h12.833m0 0L11 4.584M17.416 11 11 17.417" stroke="#1E1E1E" stroke-width="1.8"
-                    stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+
+        <a href="/" class="btn rounded-full mt-10 pt-2 pb-10 px-7">
+            Back Home
         </a>
     </div>
 </x-layout>
