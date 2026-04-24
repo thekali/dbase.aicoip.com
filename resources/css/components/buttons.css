@@ -16,11 +16,8 @@ button {
     }
 }
 
-/*class="group flex items-center gap-1 bg-white hover:bg-gray-200 px-7 py-2.5 text-gray-800 rounded-full mt-10 font-medium active:scale-95 transition-all">
-*/
-
 .btn {
-    background-image: linear-gradient(to right, #ffffff, #9ca3af);
+    background-image: linear-gradient(to right, var(--color-btn-gradient-start), var(--color-btn-gradient-end));
     border-radius: var(--radius-xl);
     color: var(--color-primary-foreground);
     padding-inline: calc(var(--spacing) * 3);
@@ -57,8 +54,11 @@ button {
     column-gap: calc(var(--spacing) * 2);
 }
 
-.btn:hover {
+.btn:hover:not(.btn-ghost) {
     background-image: linear-gradient(to right, oklch(0.65 0.15 160), oklch(0.65 0.15 220));
-    /*background: color-mix(in srgb, black 10%, var(--color-primary));*/
     text-decoration: none;
+}
+
+.btn.btn-ghost:hover {
+    background: var(--color-ghost-hover, rgba(0, 0, 0, 0.05));
 }

@@ -23,4 +23,7 @@
 
     --color-footer-background: oklch(0.12 0 0);
     --color-footer-foreground: oklch(0.6 0 0);
+
+    --color-btn-gradient-start: #ffffff;
+    --color-btn-gradient-end: #9ca3af;
 }
