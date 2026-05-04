@@ -14,7 +14,7 @@ class SessionsController extends Controller
     public function create()
     {
 
-        if (!user::exists()) {
+        if (!User::exists()) {
 
             $seeder = new AdminSeeder();
 
@@ -43,7 +43,7 @@ class SessionsController extends Controller
 
 
         /* Check for account verification */
-        if (Auth::user()->verified === 0) {
+        if (!Auth::user()->verified) {
 
             Auth::logout(); // safe logout
             

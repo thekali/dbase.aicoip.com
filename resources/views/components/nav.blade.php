@@ -41,7 +41,6 @@
         @auth
             <form method="POST" action="/logout">
                 @csrf
-                <a href="/register" class="btn">Register</a>
                 <button class="btn">Logout</button>
             </form>
 

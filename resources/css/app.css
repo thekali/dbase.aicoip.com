@@ -16,7 +16,7 @@
         "Noto Color Emoji";
 
     --color-foreground: oklch(0.12 0 0);
-    --color-card--001: oklch(0.16 0 0);
+    --color-card-001: oklch(0.16 0 0);
     --color-primary: oklch(0.65 0.15 160);
     --color-primary-foreground: oklch(0.12 0 0);
     --color-border: oklch(0.24 0 0);
