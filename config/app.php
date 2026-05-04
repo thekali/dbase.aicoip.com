@@ -67,7 +67,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    // 'timezone' => 'UTC', //uncomment for the origina timzone
+    'timezone' => 'Europe/Rome',  
 
     /*
     |--------------------------------------------------------------------------

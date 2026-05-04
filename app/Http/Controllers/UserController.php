@@ -34,11 +34,7 @@ class UserController extends Controller
             'password' => $request->password,
         ]);
 
-        Auth::login($user);
-
-        dd();
-
-        return to_route('/')->with('success', 'Registrazione completata!');
+        return to_route('landing')->with('success', 'Registrazione completata!<br>Il tuo account deve essere verificato da un amministratore');
 
     }
 }

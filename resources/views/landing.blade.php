@@ -1,15 +1,18 @@
 <x-layout>
     <h1 class="text-center">Landing page</h1>
     @auth
-        <p><a href="/register" class="btn">Register</a></p>
+        <h1>Landing page as registered</h1>
+        @if (Session::has('message'))
+            <p class="alert alert-info">{{ Session::get('message') }}</p>
+        @endif
     @endauth
 
     @guest
-        @if (App\Models\User::exists())
-            <!-- if user exists load sign in page -->
+        <h1> Landing Page as a Guest </h1>
+        @if (Session::has('message'))
+            <p class="alert alert-info">{{ Session::get('message') }}</p>
         @endif
-        <!-- if no user exists autoconfig basic admin user -->
-
     @endguest
+
 
 </x-layout>
