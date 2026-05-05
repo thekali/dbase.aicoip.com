@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\SessionsController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,9 @@ Route::get('login', [SessionsController::class, 'create'])->name('login')->middl
 Route::post('login', [SessionsController::class, 'store'])->middleware('guest');
 
 Route::post('/logout', [SessionsController::class, 'destroy'])->middleware('auth');
+
+/* Accounts */
+Route::get('/accounts', [AccountController::class, 'index'])->name('accounts')->middleware('auth');
  
 //Route::post('login', [SessionsController::class, 'store'])->middleware('guest');
 
