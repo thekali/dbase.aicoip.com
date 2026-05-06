@@ -23,6 +23,7 @@ Route::post('/logout', [SessionsController::class, 'destroy'])->middleware('auth
 
 /* Accounts */
 Route::get('/accounts', [AccountController::class, 'index'])->name('accounts')->middleware('auth');
+Route::get('/accounts/{account}', [AccountController::class, 'show'])->name('account.show')->middleware('auth');
  
 //Route::post('login', [SessionsController::class, 'store'])->middleware('guest');
 

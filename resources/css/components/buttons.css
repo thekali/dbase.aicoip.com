@@ -15,11 +15,36 @@ button {
         background-position: 0% 50%;
     }
 }
+/*
+class="hidden md:flex items-center gap-2.5 bg-linear-to-r from-zinc-950 to-zinc-500 text-zinc-50 hover:text-zinc-200 text-sm font-medium pl-5 pr-2 py-2 rounded-full  border-0"
+    > */
+/*
+--color-foreground: oklch(0.12 0 0);
+--color-card-001: oklch(0.16 0 0);
+--color-primary: oklch(0.65 0.15 160);
+--color-primary-foreground: oklch(0.12 0 0);
+--color-border: oklch(0.24 0 0);
+
+--color-muted-foreground: oklch(0.6 0 0);
+
+--color-footer-foreground: oklch(0.6 0 0);
+
+--color-btn-gradient-start: oklch(14.1% 0.005 285.823);
+--color-btn-gradient-end: oklch(55.2% 0.016 285.938);
+*/
 
 .btn {
-    background-image: linear-gradient(to right, var(--color-btn-gradient-start), var(--color-btn-gradient-end));
-    border-radius: var(--radius-xl);
-    color: var(--color-primary-foreground);
+    background-image: linear-gradient(
+        to top,
+        oklch(65.1% 0.005 285.823),
+        oklch(85.2% 0.016 285.938)
+    );
+
+    border-radius: calc(infinity * 1px);
+
+    color: white;
+    text-shadow: 2px 2px oklch(65.1% 0.005 285.823);
+
     padding-inline: calc(var(--spacing) * 3);
     font-size: var(--text-sm);
     font-weight: var(--font-weight-medium);
@@ -29,17 +54,20 @@ button {
     display: inline-block;
 }
 
-
 .btn.btn-outlined {
     background: transparent;
     border: 1px solid var(--color-border);
-    border-color:  #16181b;
+    border-color: #16181b;
     color: var(--color-foreground);
 }
 
 .btn.btn-outlined:hover {
     /* background: color-mix(in srgb, black 25%, var(--color-input)); */
-    background-image: linear-gradient(to right, oklch(0.65 0.15 160), oklch(0.65 0.15 220));
+    background-image: linear-gradient(
+        to right,
+        oklch(0.65 0.15 160),
+        oklch(0.65 0.15 220)
+    );
     color: var(--color-primary-foreground);
     border-color: var(--color-primary-foreground);
 }
@@ -55,7 +83,11 @@ button {
 }
 
 .btn:hover:not(.btn-ghost) {
-    background-image: linear-gradient(to right, oklch(0.65 0.15 160), oklch(0.65 0.15 220));
+    background-image: linear-gradient(
+        to top,
+        oklch(65.1% 0.005 285.823),
+        oklch(0.85 0.1 155)
+    );
     text-decoration: none;
 }
 
